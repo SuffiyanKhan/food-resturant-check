@@ -1,0 +1,158 @@
+        :root{
+    --primary-color:#AB2C48;
+    --secondary-color:#43121d;
+    --third-color:#f98169;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999;
+    --black-color:#000;
+    --primary-font:'Roboto', sans-serif;
+    --secondary-font:'Quicksand', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+h2{
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    line-height: 3rem;
+    color: var(--primary-color);
+}
+h4{
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+   /* ======================== */
+        body{
+            background-image: url(images/image2/pexels-ella-olsson-1640773.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+        }
+        .admin{
+            margin: auto;
+            position: relative;
+            width: 60%;
+            height: 580px;
+            border: 0.2425rem solid var(--primary-color);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+
+        }
+        .admin .inputs input{
+            position: relative;
+            outline: unset;
+            box-shadow: none;
+            border: 0.0225rem solid var(--primary-color);
+        }
+        .admin .inputs #uploadpic{
+            display: none;
+        }
+        .admin .inputs #hidden{
+            display: none;
+            width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 1px dotted grey;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+        }
+        .main-btn{
+            display: inline-block;
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+        }
+        .main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.admin .bttn{
+    justify-content: center;
+    align-items: center;
+}
+.admin .inputs .asa{
+    justify-content: space-between;
+    align-items: center;
+}
+.admin .inputs  .upLoad{
+    /* width: 100px; */
+    height: 40px;
+}
+.admin .inputs  #upload{
+    width: 80px !important ;
+    height:80px;
+    line-height: 80px;
+    border-radius: 50px;
+    border: 1px dotted grey;
+    background-color: white;
+    cursor: pointer;
+}
+.admin .login{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3075rem;
+    font-weight: 650;
+}
+.admin .login p a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.admin .login p a:hover{
+    text-decoration: underline;
+}
+        @media (max-width:767px) {
+            .admin{
+                width: 100%;
+                height: 100vh;
+            }
+            .admin .inputs #hidden{
+                width: 80px;
+                height:80px;
+
+            }
+            .admin .inputs .asa #upload{
+                width: 80px !important;
+                height:80px;
+            }
+            .admin .login{
+                position: relative;
+                top: 15px;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.3075rem;
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .admin .login p a{
+                font-weight: 650;
+                text-decoration: none;
+                color: var(--primary-color);
+            }
+            .admin .login p a:hover{
+                text-decoration: underline;
+            }
+        }

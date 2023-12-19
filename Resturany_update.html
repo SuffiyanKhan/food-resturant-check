@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        :root{
+    --primary-color:#AB2C48;
+    --secondary-color:#43121d;
+    --third-color:#f98169;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999;
+    --black-color:#000;
+    --primary-font:'Roboto', sans-serif;
+    --secondary-font:'Quicksand', sans-serif;
+}
+        .bottom-section .cards{
+            position: relative;
+            top: 130px;
+            /* margin: 13px; */
+        /* gap: 20px; */
+            
+        }
+        .bottom-section .cards img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .bottom-section hr{
+            position: relative;
+            top: 130px;
+            /* position: ; */
+        }
+        .menuCards{
+            position: relative;
+            top: 160px;
+        }
+        .menuCards .card img{
+            cursor: pointer;
+        }
+        .menuCards .card .ssd{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menuCards .card .ssd i{
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .profilePopup{
+    position: fixed;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width: 600px;
+height: 310px;
+background-color: white;
+border-radius: 20px;
+box-shadow: 0 0 10px;
+z-index: 1;
+z-index: -1;
+opacity: 0;
+display: none;
+}
+#getfile{
+    display: none;
+}
+.profilePopup{
+    justify-content: space-between;
+    align-items: center;
+}
+.profilePopup .popup{
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    /* flex-direction: column; */
+}
+.profilePopup .popup  .clpop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.profilePopup .popup  .clpop button{
+    width: 80px;
+    height: 40px;
+}
+.profilePopup .popup input{
+    height: 40px;
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+}
+.profilePopup .popup label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 100px;
+    /* line-height: 80px; */
+    border: 1px solid;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.profilePopup .popup #hidden{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 100px;
+    /* line-height: 80px; */
+    border: 1px solid;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.profilePopup .popup .bbbttn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid;
+    /* left: 20px; */
+}
+@media (max-width:767px) {
+    .profilePopup{
+        width: 100%;
+        /* height: auto; */
+        height: 370px;
+    }
+    .profilePopup .popup{
+        flex-direction: column;
+    }
+    .profilePopup .popup .bbbttn{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        position: relative;
+        /* top: 60px; */
+    }
+    .profilePopup .popup label{
+        width: 220px;
+        height: 110px;
+    }
+    .profilePopup .popup #hidden{
+        width: 220px;
+        height: 110px;
+    }    
+}
+.profilePopup  .bbbttn #addC{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    /* left: 20px; */
+    padding: 0.625rem 1.875rem;
+    line-height: 1.5625rem;
+    background-color: var(--primary-color);
+    border: 0.1875rem solid var(--primary-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0/19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    /* display: none; */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index2.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " id="showPopupS" href="#about">Upload categories</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link " href="#explore-foods">Explore foods</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link " href="#testimonial">Reviews</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link " href="#faq">FAQ</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link " href="./Resturany_update.html">Resturant update</a>
+                        </li> -->
+                        <li><button class="main-btn">1200 345 123</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="profilePopup">
+        <div class="container">
+            <div class="row">
+                <div class="text-center mt-3">
+                    <h2 id="getdet">Add Category</h2>
+                </div>
+                <div class="mt-3 d-flex popup">
+                    <input placeholder="Enter category" required class="form-control" style="width: 300px;" type="text" id="getCategory">
+                    <div class="clpop">
+                        <input type="file" id="getfile">
+                        <label for="" id="hidden"></label>
+                        <label for="getfile" id="show"> Add category image</label>
+                    </div>
+                </div>
+                <div class=" bbbttn">
+                    <button disabled id="addC">Add category</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="menuCards">
+        <div class="menuCards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 cards">
+                        <h2>Menu / Categories</h2>
+                    </div>
+                </div>
+                <div class="row showCategory">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ellipsis-vertical -->
+<!-- ellipsis -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script type="module" src="Resturany_update.js"></script>   
+</body>
+</html>

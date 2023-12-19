@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Adminsignup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+    ">
+    
+</head>
+<body>
+    <section>
+        <div class="admin mt-lg-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="text-content text-center mt-4 header">
+                        <h2>Registration For Resturant Admin</h2>
+                    </div>
+                </div>
+                <div class="row inputs">
+                    <div class="col-lg-6 col-mb-6 col-12 mb-4">
+                    </div>
+                    <div class="asa d-flex ">
+                        <button id="hidden"></button>
+                        <label for="uploadpic" class="text-center" id="upload" required >Click here </label>
+                        <input type="file" name="" id="uploadpic">
+                        <button  class="btn btn-primary upLoad ">+Upload</button>
+                    </div>
+                </div>
+                <div class="row inputs mt-lg-5 mt-3">
+                    <div class="col-lg-6 col-mb-6 col-12 mb-4">
+                        <input class="form-control" placeholder=" Full Name" required type="text"  id="regFulName">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-12 mb-4">
+                        <input class="form-control" placeholder=" Resturant Name" required type="text"  id="ResturantName">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-12 mb-4">
+                        <input class="form-control" placeholder="Email" type="email" required  id="regisEmail">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-12 mb-4">
+                        <input class="form-control" placeholder="Password" type="password" required  id="regisPassword">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-12 mb-4">
+                        <input class="form-control" placeholder="Phone" type="number" required  id="regisPhone">
+                    </div>
+                    <div class="col-lg-6 col-mb-6 col-12 mb-4">
+                        <input class="form-control" placeholder="Resturant Address" required type="text"  id="resgisResturantAddress">
+                    </div>
+                    <div class="col-12 d-flex mt-lg-4 mt-2 bttn">
+                        <button class="main-btn">Registered</button>
+                    </div>
+                    <div class="col-12 d-flex mt-lg-4 mt-2 text-center login">
+                        <p>I have a Account <a href="./login2.html">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script>
+//         let hidden = document.querySelector('#hidden')
+// let uploadpi =document.querySelector('#uploadpic')
+// document.querySelector('.upLoad').addEventListener('click',()=>{
+//     hidden.style.display='block';
+//     document.querySelector('#upload').style.display='none'
+//     // upload.style.display='none'
+
+// })
+
+// uploadpi.addEventListener("change", function(){
+//   const reader = new FileReader();
+//   reader.addEventListener("load", () => {
+//     uploaded_image = reader.result;
+//     document.getElementById("hidden").style.backgroundImage = `url(${uploaded_image})`;
+
+//   });
+//   reader.readAsDataURL(this.files[0])
+// })
+
+//     </script>
+<script type="module" src="Adminsignup.js"></script>
+</body>
+</html>

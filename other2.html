@@ -1,0 +1,162 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        /* .image{
+            padding: 30.125rem 0;
+            width: 100%;
+            background: url(images/image2/2018-03-13.jpg) no-repeat center;
+
+
+        } */
+        .bottom-section .cards{
+            position: relative;
+            top: 130px;
+            /* margin: 13px; */
+        /* gap: 20px; */
+            
+        }
+        .bottom-section .cards img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .bottom-section hr{
+            position: relative;
+            top: 130px;
+            /* position: ; */
+        }
+        .menuCards{
+            position: relative;
+            top: 160px;
+        }
+        .menuCards .card img{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="images/logo/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#explore-foods">Explore foods</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#testimonial">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#faq">FAQ</a>
+                        </li> -->
+                        <!-- <li><button class="main-btn">Card<i class="fas fa-shopping-basket ps-3"></i></button></li> -->
+                        <button class="main-btn" disabled data-bs-toggle="offcanvas" href="#addChartCanvas" role="button"
+                        aria-controls="addChartCanvas">
+                        <p id="cartNo"></p><i class="fa-solid fa-cart-shopping"
+                        ></i>
+                        My Cart
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="bottom-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 cards ">
+                        <img src="images/image2/2018-03-13.jpg" class="img-fluid" alt="...">       
+                        <div class=" text">
+                            <h2>Zahid Resturant</h2>
+                            <p class="card-text"> <span>Address:</span> Tariq Rd, Pakistan Employees Co-Operative Housing Society Block 2 PECHS, Karachi, Karachi City, Sindh</p>
+                            <p>Closes 12:20 am | Serves: 1</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section id="menuCards">
+        <div class="menuCards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 cards">
+                        <h2>Menu / Categories</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card col-lg-4 col-md-6 mb-lg-0 mb-4" >
+                        <img src="images/chicken/5f6fg0l8_keraal-roast-chicken_625x300_14_December_19.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Chicken</h2>
+                          <!-- <p class="card-text">Address: Tariq Rd, Pakistan Employees Co-Operative Housing Society Block 2 PECHS, Karachi, Karachi City, Sindh</p>
+                          <p>Closes 12:20 am | Serves: 1</p> -->
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 mb-lg-0 mb-4" >
+                        <img src="images/beef/download.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Beef</h2>
+                          <!-- <p class="card-text">Address: Tariq Rd, Pakistan Employees Co-Operative Housing Society Block 2 PECHS, Karachi, Karachi City, Sindh</p>
+                          <p>Closes 12:20 am | Serves: 1</p> -->
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 mb-lg-0 mb-4" >
+                        <img src="images/soup/360_F_245007231_vDwC9ceDNtjUCA5YDuq6mPDRG5ocPg0B.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h2 class="card-title">Soups</h2>
+                          <!-- <p class="card-text">Address: Tariq Rd, Pakistan Employees Co-Operative Housing Society Block 2 PECHS, Karachi, Karachi City, Sindh</p>
+                          <p>Closes 12:20 am | Serves: 1</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script>
+       let nav = document.querySelector('.navigation-wrap');
+window.onscroll = ()=>{
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add('scroll-on')
+    }else{
+        nav.classList.remove('scroll-on')
+
+    }
+}
+// let nav = document.querySelector('.navigation-wrap');
+window.onscroll = ()=>{
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add('scroll-on')
+    }else{
+        nav.classList.remove('scroll-on')
+
+    }
+}
+document.querySelector('.card').addEventListener('click',()=>{
+    console.log('hi')
+})
+    </script>
+</body>
+</html>
